@@ -14,7 +14,7 @@ namespace ACM_management
         }
         public Product ProductRetrive(int ProductId)
         {
-            Product product = new Product(1);            
+            Product product = new Product(2);            
                 if (ProductId == 2)
                 {
                     product.productName = "Computer";
