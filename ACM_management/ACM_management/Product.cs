@@ -13,28 +13,21 @@ namespace ACM_management
         {
 
         }
-        public Product(string productId)
+        public Product(int productId)
         {
             this.productId = productId;
         }
         public string productName { get; set; }
         public string ProductDescription { get; set; }
-        public decimal? price { get; set; }
-        public string productId { get; set; }
+        public decimal? price { get; set; }        
+        public int productId { get; private set; }
 
-        public void save()
-        {
 
-        }
-        public void retrive()
-        {
-
-        }
         public bool validate()
         {
             var isValid = true;
             if (string.IsNullOrWhiteSpace(productName)) isValid = false;
-            if (string.IsNullOrWhiteSpace(productId)) isValid = false;
+            //if (string.IsNullOrWhiteSpace(productId)) isValid = false;
             return isValid;
 
 

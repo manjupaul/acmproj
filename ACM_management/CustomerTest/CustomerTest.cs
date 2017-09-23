@@ -39,7 +39,7 @@ namespace CustomerTest
         {
             Customer cust = new Customer();
             cust.lastName = "Jhon";
-            cust.emailId = "jhon.smith@hobyton.com";
+            cust.emailId = "jhon.smith@gmail.com";
             var expected = true;
             var actual = cust.validate();
             Assert.AreEqual(expected, actual);

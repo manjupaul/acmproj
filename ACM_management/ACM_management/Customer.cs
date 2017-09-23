@@ -11,12 +11,12 @@ namespace ACM_management
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string emailId { get; set; }
-        public string custId { get; private set; }
+        public int custId { get; private set; }
         public Customer()
         {
 
         }
-        public Customer(string custId)
+        public Customer(int custId)
         {
             this.custId = custId;
         }
@@ -35,13 +35,6 @@ namespace ACM_management
             return isValid;
             
         }
-        public void save()
-        {
-
-        }
-        public void retrive()
-        {
-
-        }
+        
     }
 }
