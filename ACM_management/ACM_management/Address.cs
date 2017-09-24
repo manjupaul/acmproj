@@ -17,10 +17,9 @@ namespace ACM_management
         {
             this.AddressId = AddressId;
 
-        }
-    
+        }    
         public int AddressId { get; set; }
-        public int AddressType { get; set; }
+        public string AddressType { get; set; }
         public string Streetline1 { get; set; }
         public string Streetline2 { get; set; }
         public string City { get; set; }

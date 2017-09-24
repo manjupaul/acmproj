@@ -12,14 +12,17 @@ namespace ACM_management
         public string lastName { get; set; }
         public string emailId { get; set; }
         public int custId { get; private set; }
-        public Customer()
+        
+        public Customer():this(0)
         {
 
         }
         public Customer(int custId)
         {
             this.custId = custId;
+            AddressList = new List<Address>();
         }
+        public List<Address> AddressList { get; set; }
         public string fullName
         {
             get
